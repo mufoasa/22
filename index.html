@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 Lounge Bar - Tetovë</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">22</span>
+                <span class="logo-subtitle">LOUNGE BAR</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-key="nav-home">Ballina</a>
+                <a href="#about" class="nav-link" data-key="nav-about">Rreth Nesh</a>
+                <a href="#menu" class="nav-link" data-key="nav-menu">Menyja</a>
+                <a href="#events" class="nav-link" data-key="nav-events">Eventet</a>
+                <a href="#contact" class="nav-link" data-key="nav-contact">Kontakt</a>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="sq">🇦🇱</button>
+                <button class="lang-btn" data-lang="en">🇬🇧</button>
+                <button class="lang-btn" data-lang="mk">🇲🇰</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <h1 class="hero-title">22</h1>
+                <p class="hero-subtitle">LOUNGE BAR</p>
+            </div>
+            <p class="hero-tagline">
+                <span data-key="hero-tagline">Chill • Sip • Smoke</span>
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-key="btn-menu">Shiko Menunë</button>
+                <button class="btn btn-secondary" data-key="btn-location">Na Gjej</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="about-title">Rreth Nesh</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description" data-key="about-description">
+                        Mirë se vini në 22 Lounge Bar, destinacioni juaj për një atmosferë të relaksuar dhe elegante në zemër të Tetovës. Ne ofrojmë një përzierje të përsosur të pijeve të shijshme, shishas cilësore dhe një ambient modern që ju fton të shijoni çdo moment.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🍸</span>
+                            <span class="feature-text" data-key="feature-cocktails">Cocktails Premium</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">☕</span>
+                            <span class="feature-text" data-key="feature-drinks">Pije të Ngrohta & të Ftohta</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💨</span>
+                            <span class="feature-text" data-key="feature-shisha">Shisha Cilësore</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.imgur.com/O51AaKv.jpeg" alt="22 Lounge Bar Interior" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="menu-title">Menyja Jonë</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all" data-key="filter-all">Të Gjitha</button>
+                <button class="filter-btn" data-filter="hot-drinks" data-key="filter-hot">Pije të Ngrohta</button>
+                <button class="filter-btn" data-filter="cold-drinks" data-key="filter-cold">Pije të Ftohta</button>
+                <button class="filter-btn" data-filter="cocktails" data-key="filter-cocktails">Cocktails</button>
+                <button class="filter-btn" data-filter="shisha" data-key="filter-shisha">Shisha</button>
+                <button class="filter-btn" data-filter="ice-cream" data-key="filter-ice-cream">Akullore</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="events-title">Eventet</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://i.imgur.com/2qTAxz9.jpeg" alt="Big Mama Event">
+                        <div class="event-overlay">
+                            <button class="event-btn" data-key="event-details">Detaje</button>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3 class="event-title">Big Mama</h3>
+                        <p class="event-date">26 Qershor 2025</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://i.imgur.com/mH77z0n.jpeg" alt="Nedim Bajrami Event">
+                        <div class="event-overlay">
+                            <button class="event-btn" data-key="event-details">Detaje</button>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3 class="event-title">Nedim Bajrami</h3>
+                        <p class="event-date">16 Qershor 2025</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://i.imgur.com/VZbcWfg.jpeg" alt="DJ Night">
+                        <div class="event-overlay">
+                            <button class="event-btn" data-key="event-details">Detaje</button>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3 class="event-title">DJ Night</h3>
+                        <p class="event-date" data-key="event-every-weekend">Çdo Fundjavë</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="location-title">Vendndodhja</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3 data-key="location-address-title">Adresa</h3>
+                    <p class="location-address">Tetovë, North Macedonia</p>
+                    <a href="https://maps.app.goo.gl/Toh4BcNjeQhGLwCa9" target="_blank" class="location-link" data-key="location-directions">
+                        Merr Udhëzimet
+                    </a>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.123456789!2d20.971234!3d42.009876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDAwJzM1LjYiTiAyMMKwNTgnMTYuNCJF!5e0!3m2!1sen!2smk!4v1234567890"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="contact-title">Kontakt & Rrjetet Sociale</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3 data-key="contact-social">Rrjetet Sociale</h3>
+                        <a href="https://instagram.com/22loungebar" target="_blank" class="social-link">
+                            <span class="social-icon">📱</span>
+                            @22loungebar
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <h3 data-key="contact-message">Dërgo Mesazh</h3>
+                        <button class="whatsapp-btn" data-key="whatsapp-btn">
+                            <span class="whatsapp-icon">💬</span>
+                            WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">22</span>
+                    <span class="logo-subtitle">LOUNGE BAR</span>
+                </div>
+                <div class="footer-nav">
+                    <a href="#home" data-key="nav-home">Ballina</a>
+                    <a href="#menu" data-key="nav-menu">Menyja</a>
+                    <a href="#contact" data-key="nav-contact">Kontakt</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/22loungebar" target="_blank" class="social-icon">📱</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 - 22 Lounge Bar. <span data-key="footer-rights">Të gjitha të drejtat e rezervuara.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
