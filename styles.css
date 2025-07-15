@@ -143,28 +143,6 @@ body {
     overflow: hidden;
 }
 
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-    z-index: -2;
-}
-
-.hero-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/placeholder.svg?height=1080&width=1920') center/cover;
-    opacity: 0.3;
-    z-index: -1;
-}
-
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -173,6 +151,17 @@ body {
     height: 100%;
     background: rgba(10, 10, 10, 0.7);
     z-index: -1;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -3; /* behind overlays and background */
 }
 
 .hero-content {
@@ -350,98 +339,99 @@ section {
 }
 
 /* Menu Section */
+.menu {
+    background: #0a0a0a;
+}
+
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: #ff006e;
+    background: rgba(255, 0, 110, 0.1);
+    color: #ff006e;
+    box-shadow: 0 5px 20px rgba(255, 0, 110, 0.2);
+}
+
 .menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .menu-item {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.6s ease-out forwards;
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* make all boxes same height */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .menu-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(255, 0, 110, 0.2);
-  border-color: rgba(255, 0, 110, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(255, 0, 110, 0.2);
+    border-color: rgba(255, 0, 110, 0.3);
 }
 
 .menu-item-image {
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
 }
 
 .menu-item-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .menu-item:hover .menu-item-image img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .menu-item-content {
-  padding: 1.5rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    padding: 1.5rem;
 }
 
 .menu-item-name {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
 }
 
 .menu-item-description {
-  color: #cccccc;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-height: 4.5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  word-break: break-word;
-  margin-bottom: 1rem;
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .menu-item-price {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #ff006e;
-  margin-top: auto;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ff006e;
+    margin-top: 1rem;
 }
 
 /* Events Section */
