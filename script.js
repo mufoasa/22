@@ -149,7 +149,7 @@ const translations = {
 // Menu items data
 const menuItems = {
   'hot-drinks': [
-  {
+    {
     name: { sq: 'Espresso', en: 'Espresso', mk: 'Еспресо' },
     description: { sq: 'Kafe espresso italiane e pasur', en: 'Rich Italian coffee', mk: 'Богато италијанско кафе' },
     price: '60 MKD',
