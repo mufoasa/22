@@ -576,7 +576,7 @@ function initializeNavigation() {
     });
 }
 
-// Animation functionality
+// Animation functionality (FIXED: exclude menu section)
 function initializeAnimations() {
     // Intersection Observer for fade-in animations
     const observerOptions = {
@@ -593,12 +593,18 @@ function initializeAnimations() {
         });
     }, observerOptions);
     
-    // Observe all sections
+    // Observe all sections EXCEPT the menu section
     document.querySelectorAll('section').forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(30px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
+        if (!section.classList.contains('menu')) {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        } else {
+            // Make sure menu section is visible immediately
+            section.style.opacity = '1';
+            section.style.transform = 'translateY(0)';
+        }
     });
     
     // Navbar background on scroll
