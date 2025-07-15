@@ -149,44 +149,218 @@ const translations = {
 // Menu items data
 const menuItems = {
   'hot-drinks': [
-    {
-      name: { sq: 'Espresso', en: 'Espresso', mk: 'Турско Кафе' },
-      description: { sq: 'Kafe espreso Italiane', en: 'Italian shot of espresso', mk: 'Традиционално турско кафе подготвено артизански' },
-      price: '150 MKD',
-      image: 'https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe04-1.jpg'
-    },
-    {
-      name: { sq: 'Çaj i Gjelbër', en: 'Green Tea', mk: 'Зелен Чај' },
-      description: { sq: 'Çaj i gjelbër organik me shije të freskët', en: 'Organic green tea with fresh taste', mk: 'Органски зелен чај со свеж вкус' },
-      price: '120 MKD',
-      image: 'https://www.cos.net.au/c/wp-content/uploads/2024/02/Black-Tea-768x461.png'
-    },
-    {
-      name: { sq: 'Cappuccino', en: 'Cappuccino', mk: 'Капучино' },
-      description: { sq: 'Kafe espresso me qumësht të shkumëzuar', en: 'Espresso coffee with foamed milk', mk: 'Еспресо кафе со пенливо млеко' },
-      price: '180 MKD',
-      image: 'https://www.sugacoffee.id/wp-content/uploads/2024/04/21.-Cappucino-Pengertian-Proses-dan-Teknik-Peyeduhannya-Suga-Coffee-2.jpg'
-    }
+     {
+    name: { sq: 'Espresso', en: 'Espresso', mk: 'Еспресо' },
+    description: { sq: 'Kafe espresso italiane e pasur', en: 'Rich Italian coffee', mk: 'Богато италијанско кафе' },
+    price: '60 MKD',
+    image: 'https://i.imgur.com/S26LFNj.png'
+  },
+  {
+    name: { sq: 'Machiato', en: 'Machiato', mk: 'Мачиато' },
+    description: { sq: 'Machiato me qumësht', en: 'Machiato with milk', mk: 'Мачиато со млеко' },
+    price: '60 MKD',
+    image: 'https://i.imgur.com/bPiYoYX.png'
+  },
+  {
+    name: { sq: 'Machiato i Madh', en: 'Large Machiato', mk: 'Голем Мачиато' },
+    description: { sq: 'Më shumë qumësht se zakonisht', en: 'More milk than regular', mk: 'Повеќе млеко од вообичаено' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/KyOjRdZ.png'
+  },
+  {
+    name: { sq: 'Kapuçino i Madh', en: 'Large Cappuccino', mk: 'Голем Капучино' },
+    description: { sq: 'Kapuçino më i madh', en: 'Larger cappuccino', mk: 'Поголем капучино' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/q58v56I.png'
+  },
+  {
+    name: { sq: 'Ice Caffe', en: 'Ice Caffe', mk: 'Леден Кафе' },
+    description: { sq: 'Espresso i ftohtë', en: 'Cold espresso', mk: 'Ладен еспресо' },
+    price: '80 MKD',
+    image: 'https://i.imgur.com/kfQinb3.png'
+  },
+  {
+    name: { sq: 'Latte Machiato', en: 'Latte Machiato', mk: 'Лате Мачиато' },
+    description: { sq: 'Espresso me qumësht', en: 'Milky espresso', mk: 'Еспресо со млеко' },
+    price: '70 MKD',
+    image: 'https://i.imgur.com/UvoNuZH.png'
+  },
+  {
+    name: { sq: 'Nescafe', en: 'Nescafe', mk: 'Нескафе' },
+    description: { sq: 'Klasik ose me shije', en: 'Classic or flavored', mk: 'Класичен или со вкус' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/3NeFk1h.png'
+  },
+  {
+    name: { sq: 'Nescafe Ice', en: 'Nescafe Ice', mk: 'Нескафе Леден' },
+    description: { sq: 'Kafe instant e ftohtë', en: 'Cold instant coffee', mk: 'Ладен инстант кафе' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/UxqaWSH.png'
+  },
+  {
+    name: { sq: 'Kafe Amerikane', en: 'American Coffee', mk: 'Американска Кафе' },
+    description: { sq: 'Kafe e lehtë e zezë', en: 'Mild black coffee', mk: 'Благо црно кафе' },
+    price: '80 MKD',
+    image: 'https://i.imgur.com/4PeR22r.png'
+  },
+  {
+    name: { sq: 'Frappe', en: 'Frappe', mk: 'Фрапе' },
+    description: { sq: 'Kafe e ftohtë me shkumë', en: 'Foamy iced coffee', mk: 'Пенливо ладено кафе' },
+    price: '110 MKD',
+    image: 'https://i.imgur.com/8aLv7Rv.png'
+  },
+  {
+    name: { sq: 'Nesquik', en: 'Nesquik', mk: 'Нескуик' },
+    description: { sq: 'Qumësht me çokollatë të ëmbël', en: 'Sweet chocolate milk', mk: 'Слатко чоколадно млеко' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/9V73T4A.png'
+  },
+  {
+    name: { sq: 'Kapuçino', en: 'Cappuccino', mk: 'Капучино' },
+    description: { sq: 'Espresso me qumësht të avulluar dhe shkumë', en: 'Espresso with steamed milk foam', mk: 'Еспресо со парено млеко и пена' },
+    price: '60 MKD',
+    image: 'https://i.imgur.com/q58v56I.png'
+  },
+  {
+    name: { sq: 'Çaj', en: 'Tea', mk: 'Чај' },
+    description: { sq: 'Çaj', en: 'Tea', mk: 'Чај' },
+    price: '70 MKD',
+    image: 'https://i.imgur.com/n881xWQ.png'
+  },
+  {
+    name: { sq: 'Çokollatë e Nxehtë', en: 'Hot Chocolate', mk: 'Топла Чоколада' },
+    description: { sq: 'Çokollatë premium e ngrohtë', en: 'Premium hot chocolate', mk: 'Премиум топла чоколада' },
+    price: '110 MKD',
+    image: 'https://i.imgur.com/GmgFGlx.png'
+  }
   ],
   'cold-drinks': [
-    {
-      name: { sq: 'Limonadë e Freskët', en: 'Fresh Lemonade', mk: 'Свежа Лимонада' },
-      description: { sq: 'Limonadë e përgatitur me limona të freskëta', en: 'Lemonade prepared with fresh lemons', mk: 'Лимонада подготвена со свежи лимони' },
-      price: '200 MKD',
-      image: 'https://greensmoothiegourmet.com/wp-content/uploads/2023/07/single-serving-lemonade3.jpg'
-    },
-    {
-      name: { sq: 'Smoothie Frutash', en: 'Fruit Smoothie', mk: 'Овошно Смути' },
-      description: { sq: 'Përzierje e frutave të freskëta sezonale', en: 'Blend of fresh seasonal fruits', mk: 'Мешавина од свежо сезонско овошје' },
-      price: '250 MKD',
-      image: 'https://emilylaurae.com/wp-content/uploads/2022/02/finished-dragon-fruit-smoothie.jpg'
-    },
-    {
-      name: { sq: 'Ujë Mineral', en: 'Mineral Water', mk: 'Минерална Вода' },
-      description: { sq: 'Ujë mineral natyral i importuar', en: 'Imported natural mineral water', mk: 'Увезена природна минерална вода' },
-      price: '80 MKD',
-      image: 'https://ujitepelene.com/wp-content/uploads/2025/06/I-GAZUAR-2.png'
-    }
+   {
+    name: { sq: 'Ujë', en: 'Water', mk: 'Вода' },
+    description: { sq: 'Ujë', en: 'Water', mk: 'Вода' },
+    price: '60 MKD',
+    image: 'https://i.imgur.com/nEWkuCS.png'
+  },
+  {
+    name: { sq: 'Ujë me Gaz', en: 'Sparkling Water', mk: 'Газирана Вода' },
+    description: { sq: 'Ujë me Gaz', en: 'Sparkling Water', mk: 'Газирана Вода' },
+    price: '70 MKD',
+    image: 'https://i.imgur.com/FWOx4HA.png'
+  },
+  {
+    name: { sq: 'Coca Cola', en: 'Coca Cola', mk: 'Кока Кола' },
+    description: { sq: 'Coca Cola', en: 'Coca Cola', mk: 'Кока Кола' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/WyHQhgz.png'
+  },
+  {
+    name: { sq: 'Coca Cola Zero', en: 'Coca Cola Zero', mk: 'Кока Кола Зеро' },
+    description: { sq: 'Coca Cola Zero', en: 'Coca Cola Zero', mk: 'Кока Кола Зеро' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/ZGVd5WV.png'
+  },
+  {
+    name: { sq: 'Fanta Portokalli', en: 'Fanta Orange', mk: 'Фанта Портокал' },
+    description: { sq: 'Fanta Portokalli', en: 'Fanta Orange', mk: 'Фанта Портокал' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/qHsQNKm.png'
+  },
+  {
+    name: { sq: 'Schweppes', en: 'Schweppes', mk: 'Швепс' },
+    description: { sq: 'Schweppes', en: 'Schweppes', mk: 'Швепс' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/yzGbBvR.png'
+  },
+  {
+    name: { sq: 'Schweppes Tonik', en: 'Schweppes Tonic', mk: 'Швепс Тоник' },
+    description: { sq: 'Schweppes Tonik', en: 'Schweppes Tonic', mk: 'Швепс Тоник' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/Ump7oge.png'
+  },
+  {
+    name: { sq: 'Schweppes Mandarine', en: 'Schweppes Tangerine', mk: 'Швепс Мандарина' },
+    description: { sq: 'Schweppes Mandarine', en: 'Schweppes Tangerine', mk: 'Швепс Мандарина' },
+    price: '90 MKD',
+    image: 'https://gajba.mk/media/2022/07/42357544.png'
+  },
+  {
+    name: { sq: 'Sprite', en: 'Sprite', mk: 'Спрајт' },
+    description: { sq: 'Sprite', en: 'Sprite', mk: 'Спрајт' },
+    price: '90 MKD',
+    image: 'https://i.imgur.com/YZD07n1.png'
+  },
+  {
+    name: { sq: 'Red Bull', en: 'Red Bull', mk: 'Ред Бул' },
+    description: { sq: 'Red Bull', en: 'Red Bull', mk: 'Ред Бул' },
+    price: '200 MKD',
+    image: 'https://i.imgur.com/hJMmBTg.png'
+  },
+  {
+    name: { sq: 'Red Bull Portokalli', en: 'Red Bull Orange', mk: 'Ред Бул Орењ' },
+    description: { sq: 'Red Bull Portokalli', en: 'Red Bull Orange', mk: 'Ред Бул Орењ' },
+    price: '200 MKD',
+    image: 'https://www.onestop.co.uk/wp-content/uploads/f04bb26c-f3e9-45d0-a2f4-757c4d4695a6.png'
+  },
+  {
+    name: { sq: 'Red Bull Belerë Praska', en: 'Red Bull White Peach', mk: 'Ред Бул Бела Праска' },
+    description: { sq: 'Red Bull Belerë Praska', en: 'Red Bull White Peach', mk: 'Ред Бул Бела Праска' },
+    price: '200 MKD',
+    image: 'https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/528x1348/2e3f4eff5e/ca_ph_250ml_the-peach-edition_country_rgb_do243398_cold_closed_front_com_full.png/m/'
+  },
+  {
+    name: { sq: 'Red Bull i Kuq', en: 'Red Bull Red', mk: 'Ред Бул Црвен' },
+    description: { sq: 'Red Bull i Kuq', en: 'Red Bull Red', mk: 'Ред Бул Црвен' },
+    price: '200 MKD',
+    image: 'https://www.redbull.com/energydrink/v1/resources/storyblok/images/f/287059/870x2200/7d77a8f904/us_wm_250ml_ac_the-red-edition_country_rgb__cold_closed_front_com_25.png/m/1000x0'
+  },
+  {
+    name: { sq: 'Red Bull Pa Sheqer', en: 'Red Bull Sugarfree', mk: 'Ред Бул Без Шеќер' },
+    description: { sq: 'Red Bull Pa Sheqer', en: 'Red Bull Sugarfree', mk: 'Ред Бул Без Шеќер' },
+    price: '200 MKD',
+    image: 'https://i0.wp.com/aperitivo.mk/wp-content/uploads/2017/12/red_bull_energy_drink_sugarfree_25cl_23561.webp?fit=1000%2C1000&ssl=1'
+  },
+  {
+    name: { sq: 'Golden Eagle', en: 'Golden Eagle', mk: 'Голден Игл' },
+    description: { sq: 'Golden Eagle', en: 'Golden Eagle', mk: 'Голден Игл' },
+    price: '110 MKD',
+    image: 'https://i.imgur.com/Ye38i76.png'
+  },
+  {
+    name: { sq: 'Lëng Molle', en: 'Apple Juice', mk: 'Сок од Јаболко' },
+    description: { sq: 'Lëng Molle', en: 'Apple Juice', mk: 'Сок од Јаболко' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/6FgAtMo.png'
+  },
+  {
+    name: { sq: 'Lëng Pjeshke', en: 'Peach Juice', mk: 'Сок од Праска' },
+    description: { sq: 'Lëng Pjeshke', en: 'Peach Juice', mk: 'Сок од Праска' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/eChfrZN.png'
+  },
+  {
+    name: { sq: 'Ice Tea', en: 'Ice Tea', mk: 'Леден Чај' },
+    description: { sq: 'Ice Tea', en: 'Ice Tea', mk: 'Леден Чај' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/fwVg5H5.png'
+  },
+  {
+    name: { sq: 'Lëng Dredhëz', en: 'Strawberry Juice', mk: 'Сок од Јагода' },
+    description: { sq: 'Lëng Dredhëz', en: 'Strawberry Juice', mk: 'Сок од Јагода' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/fe7QHfO.png'
+  },
+  {
+    name: { sq: 'Lëng Vishnje', en: 'Sour Cherry Juice', mk: 'Сок од Вишна' },
+    description: { sq: 'Lëng Vishnje', en: 'Sour Cherry Juice', mk: 'Сок од Вишна' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/pL0fAuq.png'
+  },
+  {
+    name: { sq: 'Lëng Ananasi', en: 'Pineapple Juice', mk: 'Сок од Ананас' },
+    description: { sq: 'Lëng Ananasi', en: 'Pineapple Juice', mk: 'Сок од Ананас' },
+    price: '100 MKD',
+    image: 'https://i.imgur.com/cVoPHFN.png'
+  }
   ],
   'cocktails': [
     {
