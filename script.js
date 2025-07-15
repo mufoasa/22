@@ -542,27 +542,31 @@ const featuredItems = [
       mk: "Бел рум, лајм, свежа мента и сода",
     },
     price: "350 MKD",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://www.cruzanrum.com/sites/default/files/styles/original/public/2021-11/CZ_Batch_7_CocktailCard_1000x1000_Mojito_Static%20%281%29.png.webp?itok=IRCdLXGt",
     category: "cocktails",
   },
-  {
-    name: { sq: "Frappe", en: "Frappe", mk: "Фрапе" },
-    description: { sq: "Kafe e shkumëzuar me akull", en: "Foamed coffee with ice", mk: "Пенливо кафе со мраз" },
-    price: "110 MKD",
-    image: "/placeholder.svg?height=200&width=300",
-    category: "cold-drinks",
+ {
+  name: { sq: "Sex on the Beach", en: "Sex on the Beach", mk: "Секс на плажа" },
+  description: {
+    sq: "Pije freskuese me vodka, lëng portokalli dhe pjeshkë",
+    en: "Refreshing drink with vodka, orange juice, and peach",
+    mk: "Освежителен коктел со вотка, сок од портокал и праска",
   },
-  {
-    name: { sq: "Shisha Mix", en: "Mixed Shisha", mk: "Мешан Наргиле" },
-    description: {
-      sq: "Kombinim i shijes së duhur për eksperiencë unike",
-      en: "Perfect flavor combination for unique experience",
-      mk: "Совршена комбинација вкусови за уникатно искуство",
-    },
-    price: "450 MKD",
-    image: "/placeholder.svg?height=200&width=300",
-    category: "shisha",
+  price: "250 MKD",
+  image: "https://cdn.imgbin.com/7/21/9/imgbin-cocktail-mojito-distilled-beverage-sea-breeze-sex-on-the-beach-cocktails-cocktail-drink-4L6V67nymTnbNTs21BdNXN9MF.jpg",
+  category: "cocktails",
+},
+{
+  name: { sq: "Cosmopolitan", en: "Cosmopolitan", mk: "Космополитен" },
+  description: {
+    sq: "Vodka, lëng boronice dhe lime për një shije klasike",
+    en: "Vodka, cranberry juice and lime for a classic taste",
+    mk: "Вотка, сок од брусница и лајм за класичен вкус",
   },
+  price: "250 MKD",
+  image: "https://png.pngtree.com/png-vector/20241203/ourmid/pngtree-a-cosmopolitan-cocktail-in-martini-glass-png-image_14555566.png",
+  category: "cocktails",
+},
 ]
 
 // Current language
