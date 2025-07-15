@@ -433,6 +433,12 @@ section {
     color: #ff006e;
     margin-top: 1rem;
 }
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Events Section */
 .events {
