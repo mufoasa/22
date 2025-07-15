@@ -507,12 +507,10 @@ function displayMenuItems(filter) {
     let itemsToShow = [];
     
     if (filter === 'all') {
-        // Show all items
         Object.keys(menuItems).forEach(category => {
             itemsToShow = itemsToShow.concat(menuItems[category].map(item => ({...item, category})));
         });
     } else {
-        // Show specific category
         if (menuItems[filter]) {
             itemsToShow = menuItems[filter].map(item => ({...item, category: filter}));
         }
@@ -522,6 +520,8 @@ function displayMenuItems(filter) {
         const menuItem = createMenuItemElement(item, index);
         menuGrid.appendChild(menuItem);
     });
+
+    revealMenuItems(); // Trigger fade-in animation after items added
 }
 
 function createMenuItemElement(item, index) {
@@ -668,7 +668,7 @@ function showEventModal(title, date) {
         </p>
         <div style="text-align: center;">
             <button class="btn btn-primary" onclick="bookEvent('${title}')">
-                ${translations[currentLang]['whatsapp-btn'] || 'WhatsApp'}
+                ${translations[currentLang]?.['whatsapp-btn'] || 'WhatsApp'}
             </button>
         </div>
     `;
@@ -694,7 +694,7 @@ function getEventDescription(title) {
         }
     };
     
-    return descriptions[currentLang][title] || descriptions.sq[title] || 'Më shumë informacione së shpejti...';
+    return descriptions[currentLang]?.[title] || descriptions.sq[title] || 'Më shumë informacione së shpejti...';
 }
 
 function bookEvent(eventTitle) {
